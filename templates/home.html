@@ -29,3 +29,12 @@
     <input type = "submit" value = "Shorten">
 
 </form>
+
+{% if code %}
+<h2>Codes that we have created are as follows</h2>
+<ul>
+    {% for code in codes %}
+    <li>{{ code }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
